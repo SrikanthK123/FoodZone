@@ -1,0 +1,301 @@
+     <div id="carouselExampleDark" class="carousel carousel-dark slide">
+  <header className="d-flex justify-content-center py-3">
+                <ul className="nav nav-pills">
+                  <li className="nav-item"  ><a  href="#" className="nav-link"  style={{textDecoration:'none',listStyle:'none',display:'none'}} data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true"  >Instruction</a></li>
+                  <li className="nav-item"><a href="#" className="nav-link" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" aria-label="Slide 1">Instruction</a></li>
+                  <li className="nav-item" ><a href="#" className="nav-link" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2">Ingredients</a></li>
+                  <li className="nav-item"><a href="#" className="nav-link" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3">Tips</a></li>
+                  
+                </ul>
+              </header>
+  <div class="carousel-inner"> 
+    <div class="carousel-item active" data-bs-interval="10000" style={{minHeight:'100vh',backgroundColor:'green',overflowY: 'auto' }}>
+     
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Soak Basmati Rice:
+
+Wash basmati rice thoroughly and soak it in water for about 30 minutes.
+Boil Rice:
+
+In a large pot, bring water to a boil.
+Add salt, whole spices, and soaked basmati rice.
+Cook the rice until it is 70-80% cooked. It should still have a slight bite to it.
+Drain the water and set aside.
+Biryani Masala:
+Sauté Onions:
+
+In a separate pan, heat oil or ghee.
+Add sliced onions and sauté until golden brown.
+Add Aromatics:
+
+Add ginger-garlic paste and sauté until the raw smell disappears.
+Add green chilies and chopped tomatoes. Cook until tomatoes are soft.
+Spices:
+
+Add biryani masala powder, red chili powder, and turmeric powder. Mix well.
+Stir in yogurt, fresh coriander leaves, and mint leaves.
+Cooking Meat or Vegetables:
+
+If making chicken or mutton biryani, add marinated and partially cooked meat to the masala.
+For vegetable biryani, add mixed vegetables.
+Simmer:
+
+Allow the meat or vegetables to cook in the masala until they are almost done.
+Layering:
+Layering Rice and Masala:
+
+In a heavy-bottomed pot or biryani handi, start layering.
+Begin with a layer of partially cooked rice.
+Add a layer of the meat or vegetable masala.
+Repeat the layers until all the rice and masala are used.
+Fried Onions and Ghee:
+
+Top the biryani with fried onions and drizzle ghee or cooking oil.
+Optionally, add saffron-soaked milk for color.
+Dum Cooking:
+
+Seal the pot with a tight-fitting lid or aluminum foil to create a dum.
+Cook on low heat for 20-25 minutes, allowing the flavors to meld.
+Fluffing and Serving:
+
+Gently fluff the biryani with a fork.
+Serve hot, garnished with fresh coriander and mint leaves.
+Enjoy your flavorful biryani! Adjust the spice levels and ingredients according to your taste preferences.</p>
+       
+        
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000" style={{height:'50vh',backgroundColor:'red'}}>
+     
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Basmati rice
+Water for soaking
+Water for cooking
+Salt
+Whole spices (bay leaves, cinnamon, cardamom, cloves)
+For Biryani Masala:
+Cooking oil or ghee
+Onions (sliced)
+Ginger-garlic paste
+Tomatoes (chopped)
+Green chilies
+Biryani masala powder
+Red chili powder
+Turmeric powder
+Yogurt
+Fresh coriander leaves
+Fresh mint leaves
+For Layering:
+Cooked rice
+Cooked meat or vegetables (chicken, mutton, beef, or mixed vegetables)
+Fried onions
+Ghee or cooking oil
+Saffron strands soaked in milk (for biryani color)</p>
+      </div>
+    </div>
+    <div class="carousel-item" style={{height:'50vh',backgroundColor:'blue'}}>
+     
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+ {/*<div className="col-md-5">
+            <img src="https://plus.unsplash.com/premium_photo-1666899830532-ba42f0c0010d?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt='image' style={{ width: '100%', minHeight: '500px' }} />
+  </div>*/}
+
+
+
+  // Few Code //
+
+  <div className="container" id='ProcessMethod'>
+                
+            <div className="ProcessBOx" style={{background:'url(https://images.unsplash.com/photo-1607151815172-254f6b0c9b4b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)',backgroundPosition:'left',backgroundSize:'cover',backgroundRepeat:'no-repeat'}}>
+             <div style={{display:'flex',justifyContent:'center'}}> <h6 style={{color:'white'}}>Instruction</h6></div>
+              <p id='InstructionPara' style={{color:'white'}}>It seems like you've listed the ingredients for making biryani. If you'd like help turning this list into a paragraph or detailed instructions, here's an example:
+
+To prepare a delicious biryani, gather the following ingredients:
+
+Basmati rice: Begin by washing the basmati rice thoroughly and soaking it in water for approximately 30 minutes.
+
+Water for soaking and cooking: Boil the soaked basmati rice in a pot of water, seasoned with salt and whole spices such as bay leaves, cinnamon, cardamom, and cloves, until it reaches 70-80% cooked. Drain the water and set aside.
+
+For the Biryani Masala:
+
+Cooking oil or ghee: Heat in a pan before adding sliced onions. Sauté until golden brown.
+
+Onions (sliced): Add to the hot oil and sauté until they develop a golden brown color.
+
+Ginger-garlic paste: Introduce to the sautéed onions and cook until the raw smell disappears.
+
+Tomatoes (chopped): Toss in the chopped tomatoes and green chilies, cooking until the tomatoes become soft.
+
+Biryani masala powder, red chili powder, and turmeric powder: Add these spices for flavor and color. Mix well.
+
+Yogurt: Incorporate yogurt into the masala for a creamy texture.
+
+Fresh coriander leaves and mint leaves: Stir in these aromatic herbs to enhance the biryani's fragrance.
+
+For Layering:
+
+Cooked rice: Begin layering the biryani by placing a portion of the partially cooked rice in a heavy-bottomed pot or biryani handi.
+
+Cooked meat or vegetables: Add a layer of the prepared meat or vegetables (chicken, mutton, beef, or mixed vegetables) over the rice.
+
+Fried onions and Ghee or cooking oil: Top the biryani with fried onions and drizzle ghee or cooking oil for added richness.
+
+Saffron strands soaked in milk: Optionally, add saffron-soaked milk for a vibrant biryani color.
+
+Seal the pot with a tight-fitting lid or aluminum foil and cook on low heat for 20-25 minutes to allow the flavors to meld. Gently fluff the biryani with a fork before serving, garnished with fresh coriander and mint leaves. Adjust the spice levels according to your taste preferences. Enjoy your flavorful biryani!</p>
+              </div>
+              <div className="ProcessBOx" style={{background:'url(https://images.unsplash.com/photo-1506368249639-73a05d6f6488?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)',backgroundPosition:'center',backgroundSize:'cover',backgroundRepeat:'no-repeat'}}>
+              <div style={{display:'flex',justifyContent:'center'}}> <h6 style={{color:'white'}}>Instruction</h6></div>
+              <p id='InstructionPara' style={{color:'white'}}>It seems like you've listed the ingredients for making biryani. If you'd like help turning this list into a paragraph or detailed instructions, here's an example:
+
+To prepare a delicious biryani, gather the following ingredients:
+
+Basmati rice: Begin by washing the basmati rice thoroughly and soaking it in water for approximately 30 minutes.
+
+Water for soaking and cooking: Boil the soaked basmati rice in a pot of water, seasoned with salt and whole spices such as bay leaves, cinnamon, cardamom, and cloves, until it reaches 70-80% cooked. Drain the water and set aside.
+
+For the Biryani Masala:
+
+Cooking oil or ghee: Heat in a pan before adding sliced onions. Sauté until golden brown.
+
+Onions (sliced): Add to the hot oil and sauté until they develop a golden brown color.
+
+Ginger-garlic paste: Introduce to the sautéed onions and cook until the raw smell disappears.
+
+Tomatoes (chopped): Toss in the chopped tomatoes and green chilies, cooking until the tomatoes become soft.
+
+Biryani masala powder, red chili powder, and turmeric powder: Add these spices for flavor and color. Mix well.
+
+Yogurt: Incorporate yogurt into the masala for a creamy texture.
+
+Fresh coriander leaves and mint leaves: Stir in these aromatic herbs to enhance the biryani's fragrance.
+
+For Layering:
+
+Cooked rice: Begin layering the biryani by placing a portion of the partially cooked rice in a heavy-bottomed pot or biryani handi.
+
+Cooked meat or vegetables: Add a layer of the prepared meat or vegetables (chicken, mutton, beef, or mixed vegetables) over the rice.
+
+Fried onions and Ghee or cooking oil: Top the biryani with fried onions and drizzle ghee or cooking oil for added richness.
+
+Saffron strands soaked in milk: Optionally, add saffron-soaked milk for a vibrant biryani color.
+
+Seal the pot with a tight-fitting lid or aluminum foil and cook on low heat for 20-25 minutes to allow the flavors to meld. Gently fluff the biryani with a fork before serving, garnished with fresh coriander and mint leaves. Adjust the spice levels according to your taste preferences. Enjoy your flavorful biryani!</p>
+              </div>
+              <div className="ProcessBOx" style={{background:'url(https://images.unsplash.com/photo-1516715043227-1cdf27bcd09a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)',backgroundPosition:'center',backgroundSize:'cover',backgroundRepeat:'no-repeat'}}>
+              <div style={{display:'flex',justifyContent:'center'}}> <h6 style={{color:'white'}}>Tips</h6></div>
+              <p id='InstructionPara' style={{color:'white'}}>It seems like you've listed the ingredients for making biryani. If you'd like help turning this list into a paragraph or detailed instructions, here's an example:
+
+To prepare a delicious biryani, gather the following ingredients:
+
+Basmati rice: Begin by washing the basmati rice thoroughly and soaking it in water for approximately 30 minutes.
+
+Water for soaking and cooking: Boil the soaked basmati rice in a pot of water, seasoned with salt and whole spices such as bay leaves, cinnamon, cardamom, and cloves, until it reaches 70-80% cooked. Drain the water and set aside.
+
+For the Biryani Masala:
+
+Cooking oil or ghee: Heat in a pan before adding sliced onions. Sauté until golden brown.
+
+Onions (sliced): Add to the hot oil and sauté until they develop a golden brown color.
+
+Ginger-garlic paste: Introduce to the sautéed onions and cook until the raw smell disappears.
+
+Tomatoes (chopped): Toss in the chopped tomatoes and green chilies, cooking until the tomatoes become soft.
+
+Biryani masala powder, red chili powder, and turmeric powder: Add these spices for flavor and color. Mix well.
+
+Yogurt: Incorporate yogurt into the masala for a creamy texture.
+
+Fresh coriander leaves and mint leaves: Stir in these aromatic herbs to enhance the biryani's fragrance.
+
+For Layering:
+
+Cooked rice: Begin layering the biryani by placing a portion of the partially cooked rice in a heavy-bottomed pot or biryani handi.
+
+Cooked meat or vegetables: Add a layer of the prepared meat or vegetables (chicken, mutton, beef, or mixed vegetables) over the rice.
+
+Fried onions and Ghee or cooking oil: Top the biryani with fried onions and drizzle ghee or cooking oil for added richness.
+
+Saffron strands soaked in milk: Optionally, add saffron-soaked milk for a vibrant biryani color.
+
+Seal the pot with a tight-fitting lid or aluminum foil and cook on low heat for 20-25 minutes to allow the flavors to meld. Gently fluff the biryani with a fork before serving, garnished with fresh coriander and mint leaves. Adjust the spice levels according to your taste preferences. Enjoy your flavorful biryani!</p>
+              </div>
+              
+         
+        </div>
+
+
+        ////// Few  //////
+         <div className='InnerBox'>
+        <div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <img src='https://cdn-icons-png.flaticon.com/512/2253/2253399.png' style={{width:'40px',height:'40px',margin:'10px'}}/>Instruction
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+      <ol>
+            <li>Soak Basmati Rice: Wash basmati rice thoroughly and soak it in water for about 30 minutes.</li>
+            <li>Boil Rice: In a large pot, bring water to a boil. Add salt, whole spices, and soaked basmati rice. Cook the rice until it is 70-80% cooked. It should still have a slight bite to it. Drain the water and set aside.</li>
+            <li>Biryani Masala: Sauté Onions - In a separate pan, heat oil or ghee. Add sliced onions and sauté until golden brown. Add Aromatics - Add ginger-garlic paste and sauté until the raw smell disappears. Add green chilies and chopped tomatoes. Cook until tomatoes are soft.</li>
+            
+          </ol>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item" >
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+      <img src='https://cdn-icons-png.flaticon.com/512/9862/9862064.png' style={{width:'40px',height:'40px',margin:'10px'}}/>Ingredients
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+      <ul>
+            <li>Basmati rice</li>
+            <li>Water for soaking and cooking</li>
+            <li>Salt</li>
+            <li>Whole spices (bay leaves, cinnamon, cardamom, cloves)</li>
+            <li>Cooking oil or ghee</li>
+            <li>Onions (sliced)</li>
+            <li>Ginger-garlic paste</li>
+            <li>Tomatoes (chopped)</li>
+          </ul>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+      <img src='https://cdn-icons-png.flaticon.com/512/1163/1163560.png' style={{width:'40px',height:'40px',margin:'10px'}}/> Tips and Tricks
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+      <p>Here are some tips and tricks to enhance your biryani:</p>
+          <ul>
+            <li>Use high-quality Basmati rice for the best results.</li>
+            <li>Adjust spice levels according to your taste preferences.</li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+Gif 
+
+https://media.giphy.com/media/svdsMNSzOShzO/giphy.gif
