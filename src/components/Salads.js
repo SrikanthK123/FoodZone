@@ -13,7 +13,7 @@ const Salads = () => {
           {
             SaladsItems.map((VegItem,index)=>(
               <div class="col" > 
-                     <div class="card" id='VegCards' style={{background:`url(${VegItem.ImageUrl})`,backgroundPosition:'center',backgroundRepeat:'no-repeat',backgroundSize:'100% 100%',height:'35vh'}}>
+                     <div class="card" id='VegCards' style={{background:`url(${VegItem.ImageUrl})`,backgroundPosition:'center',backgroundRepeat:'no-repeat',backgroundSize:'100% 100%',height:'35vh',textAlign:'center'}}>
       <p class="card-title">{VegItem.Name}</p>
       <p class="small-desc">
         {VegItem.desc.slice(0,100)}...

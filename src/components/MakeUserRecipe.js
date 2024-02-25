@@ -34,7 +34,7 @@ const MakeUserRecipe = () => {
    {
      recipes.map((data,index)=>(
        <div class="col-md-12" > 
-          <div class="card mb-3" style={{maxWidth: "540px"}}>
+          <div class="card mb-3" style={{maxWidth: "540px",}}>
   <div class="row g-0">
     <div class="" style={{display:'flex',alignItems:'center'}}>
     <img src={`${data.ImageURL}`} className="img-fluid rounded-start" alt="recipes" />
