@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/FoodZone/static/css/main.2f22862e.css",
-    "main.js": "/FoodZone/static/js/main.0551cf05.js",
+    "main.js": "/FoodZone/static/js/main.59894426.js",
     "static/js/453.8e74ae1d.chunk.js": "/FoodZone/static/js/453.8e74ae1d.chunk.js",
     "static/media/BG2.gif": "/FoodZone/static/media/BG2.faaa4d2823d1da879eb0.gif",
     "static/media/BG3.gif": "/FoodZone/static/media/BG3.ff2e98a622fa3ad9d3aa.gif",
     "index.html": "/FoodZone/index.html",
     "main.2f22862e.css.map": "/FoodZone/static/css/main.2f22862e.css.map",
-    "main.0551cf05.js.map": "/FoodZone/static/js/main.0551cf05.js.map",
+    "main.59894426.js.map": "/FoodZone/static/js/main.59894426.js.map",
     "453.8e74ae1d.chunk.js.map": "/FoodZone/static/js/453.8e74ae1d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2f22862e.css",
-    "static/js/main.0551cf05.js"
+    "static/js/main.59894426.js"
   ]
 }
