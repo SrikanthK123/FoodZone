@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/FoodZone/static/css/main.2f22862e.css",
-    "main.js": "/FoodZone/static/js/main.d2c0e88d.js",
-    "static/js/453.8e74ae1d.chunk.js": "/FoodZone/static/js/453.8e74ae1d.chunk.js",
-    "static/media/BG2.gif": "/FoodZone/static/media/BG2.faaa4d2823d1da879eb0.gif",
-    "static/media/BG3.gif": "/FoodZone/static/media/BG3.ff2e98a622fa3ad9d3aa.gif",
-    "index.html": "/FoodZone/index.html",
-    "main.2f22862e.css.map": "/FoodZone/static/css/main.2f22862e.css.map",
-    "main.d2c0e88d.js.map": "/FoodZone/static/js/main.d2c0e88d.js.map",
-    "453.8e74ae1d.chunk.js.map": "/FoodZone/static/js/453.8e74ae1d.chunk.js.map"
+    "main.css": "/static/css/main.936373c0.css",
+    "main.js": "/static/js/main.a1e8a222.js",
+    "static/js/453.8e74ae1d.chunk.js": "/static/js/453.8e74ae1d.chunk.js",
+    "static/media/BG2.gif": "/static/media/BG2.faaa4d2823d1da879eb0.gif",
+    "static/media/BG3.gif": "/static/media/BG3.ff2e98a622fa3ad9d3aa.gif",
+    "index.html": "/index.html",
+    "main.936373c0.css.map": "/static/css/main.936373c0.css.map",
+    "main.a1e8a222.js.map": "/static/js/main.a1e8a222.js.map",
+    "453.8e74ae1d.chunk.js.map": "/static/js/453.8e74ae1d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f22862e.css",
-    "static/js/main.d2c0e88d.js"
+    "static/css/main.936373c0.css",
+    "static/js/main.a1e8a222.js"
   ]
 }
