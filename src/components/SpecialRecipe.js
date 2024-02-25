@@ -1,8 +1,11 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import { Link } from 'react-router-dom/cjs/react-router-dom.min'
 import { Recipes, SpecialRecipeItems } from './RecipesData'
 
 const SpecialRecipe = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []); 
   return (
     <div className='HomePage'>
     <div class="container"  style={{marginTop:'50px'}}>

@@ -1,10 +1,15 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import { UseSelector, useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom/cjs/react-router-dom.min'
 import { remove } from '../store/cartSlice'
 import { Dispatch } from '@reduxjs/toolkit'
 
+
+
 const FavouriteRecipes = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []); 
     const FavouriteProduct = useSelector(state => state.cart)
     const dispatch = useDispatch()
     const removeItem = (Name) => {

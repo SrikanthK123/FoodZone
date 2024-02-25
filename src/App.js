@@ -5,27 +5,22 @@ import Footer from './components/Footer';
 import NavBar from './components/NavBar';
 import { BrowserRouter as Router } from "react-router-dom";
 import { Provider } from 'react-redux';
-import store from './store/store';
-import {PersistGate} from "redux-persist/integration/react"
-import persistStore from 'redux-persist/es/persistStore';
-
-
-
+import {store,persistor} from "./store/store"
+import { PersistGate } from 'redux-persist/integration/react';
 
 function App() {
-  let persistor = persistStore(store)
   return (
     <div className="App">
-    <Provider store={store}>
-      <PersistGate  persistor={persistor}>
-        <Router>
-          <NavBar />
-          <AnimationRouters />
-          <Footer />
-        </Router>
+      <Provider store={store}>
+        <PersistGate loading={null} persistor={persistor}>
+          <Router>
+            <NavBar />
+            <AnimationRouters />
+            <Footer />
+          </Router>
         </PersistGate>
-    </Provider>
-  </div>
+      </Provider>
+    </div>
   );
 }
 

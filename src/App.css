@@ -31,7 +31,7 @@
   transition: 0.5s ease-in-out;
   background-position: center;
 }
-.card {
+#HomeCard {
   --bg: #f7f7f8;
   --hover-bg: #FFE5F4;
   --hover-text: #fdffcd;
@@ -59,17 +59,17 @@
   font-size: 1em;
 }
 
-.card > :not(span) {
+#HomeCard > :not(span) {
   transition: .3s cubic-bezier(.6,.4,0,1);
 }
 
-.card > strong {
+#HomeCard > strong {
   display: block;
   font-size: 1.4rem;
   letter-spacing: -.035em;
 }
 
-.card span {
+#HomeCard span {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -85,17 +85,17 @@
 
 }
 
-.card:hover span {
+#HomeCard:hover span {
   top: 0;
   font-size: 1.2em;
 }
 
-.card:hover {
+#HomeCard:hover {
   background: var(--hover-bg);
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 
-.card:hover>div,.card:hover>strong {
+#HomeCard:hover>div,.card:hover>strong {
   opacity: 0;
   
 }

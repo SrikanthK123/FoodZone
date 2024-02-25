@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import { Link, Route, Switch, useRouteMatch } from "react-router-dom";
 import Instruction from './Instruction';
 import { animate, motion} from "framer-motion"
@@ -6,6 +6,10 @@ import { useDispatch } from 'react-redux';
 import { add } from '../store/cartSlice';
 
 const AllRecipeProcess = (props) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []); 
+
   const dispatch = useDispatch();
   const addToFavourite = (props)=>{
     dispatch(add(props))

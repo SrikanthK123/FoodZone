@@ -1,8 +1,11 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import { Recipes, VegetarianItems } from './RecipesData'
 import { Link } from 'react-router-dom/cjs/react-router-dom.min'
 
 const VegetarianRecipes = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []); 
   return (
     <div className='HomePage'>
       <div class="container"  style={{marginTop:'50px'}}>

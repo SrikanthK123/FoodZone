@@ -1,43 +1,34 @@
-import { configureStore } from "@reduxjs/toolkit";
-import cartSlice from "./cartSlice";
-import storage from "redux-persist/lib/storage";
-import {persistReducer} from "redux-persist"
-import { combineReducers } from "@reduxjs/toolkit";
-import {
-    persistStore,
-    FLUSH,
-    REHYDRATE,
-    PAUSE,
-    PERSIST,
-    PURGE,
-    REGISTER,
-  } from 'redux-persist'
+// store.js
+import { configureStore } from '@reduxjs/toolkit';
+import cartSlice from './cartSlice';
+import storage from 'redux-persist/lib/storage';
+import { persistStore, persistReducer } from 'redux-persist';
+import { combineReducers } from '@reduxjs/toolkit';
+import recipeSlice from './recipeSlice';
 
 const persistConfig = {
-    key :"root",
-    version : 1,
-    storage 
-}
+  key: 'root',
+  storage,
+  whitelist: [ 'recipes','cart'],
+};
 
-const reduce = combineReducers({
+const rootReducer = combineReducers({
+  cart: cartSlice,
+  recipes: recipeSlice,
+});
 
-    cart : cartSlice,
-  
-})
-
-const persistedReducer =persistReducer(persistConfig,reduce)
-
+const persistedReducer = persistReducer(persistConfig, rootReducer);
 
 const store = configureStore({
-    reducer : persistedReducer,
-    middleware: (getDefaultMiddleware) =>
+  reducer: persistedReducer,
+  middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
       serializableCheck: {
-        ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
+        ignoredActions: ['FLUSH', 'REHYDRATE', 'PAUSE', 'PERSIST', 'PURGE', 'REGISTER'],
       },
     }),
-})
+});
 
-  
+const persistor = persistStore(store);
 
-export default store;
+export  { store, persistor };
