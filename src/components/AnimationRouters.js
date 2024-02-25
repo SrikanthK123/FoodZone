@@ -26,8 +26,7 @@ const AnimationRouters = () => {
     <AnimatePresence>
      
     <Switch location={location} key={location.pathname}>
-    <Route exact path="/FoodZone"><Home/></Route>
-   <Route exact path="/"><SingleRecipe/></Route>
+    <Route exact path="/"><Home/></Route>
    <Route exact path="/About" ><About/></Route>
    {
      
