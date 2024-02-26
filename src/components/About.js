@@ -74,11 +74,6 @@ const About = () => {
   
       setSuccessalert('👍 Successfully added');
     } 
-
-   
-    
-
-
   };        
 
   return (
@@ -100,7 +95,7 @@ const About = () => {
           <div className="alert mx-auto mt-4" role="alert" style={{ maxWidth: '300px', backgroundColor: '#5c5470', color: 'white',textAlign:'center'}}>
             {successalert}
             <div style={{ display: 'flex', gap: '10px', padding: '20px' }}>
-             <Link to="/FavouriteRecipes"> <button type="button" className='btn btn-primary' id='VegViewBtn'>View</button></Link>
+             <Link to="/UserRecipe"> <button type="button" className='btn btn-primary' id='VegViewBtn'>View</button></Link>
               <div>
               <button type="button" id='VegViewBtn' className="btn btn-outline-primary" onClick={() => setSuccessalert('')} >Close</button>
 
