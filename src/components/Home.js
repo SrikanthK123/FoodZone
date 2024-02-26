@@ -23,7 +23,7 @@ const Home = () => {
         
     </div>
     <p className='text-white py-2' style={{textAlign:'justify'}} >
-      Indulge your senses with our latest food adventure on "FoodZone"! Join us in the kitchen as we whip up a mouthwatering [dish name] that's perfect for any occasion. Our step-by-step guide ensures even novice cooks can master this culinary delight. 
+      Indulge your senses with our latest food adventure on "FoodZone"! Join us in the kitchen as we whip up a mouthwatering recipes that's perfect for any occasion. Our step-by-step guide ensures even novice cooks can master this culinary delight. 
     </p>
     <h3 style={{color:'white',borderBottom:'2px solid white',fontFamily:'monospace'}}>Food List</h3>
     <div className='container' style={{display:'flex',justifyContent:'center',alignItems:'center'}}>

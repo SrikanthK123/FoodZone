@@ -36,16 +36,20 @@ const MakeUserRecipe = () => {
        <div class="col-md-12" > 
           <div class="card mb-3" style={{maxWidth: "540px",}}>
   <div class="row g-0">
-    <div class="" style={{display:'flex',alignItems:'center'}}>
-    <img src={`${data.ImageURL}`} className="img-fluid rounded-start" alt="recipes" />
+    <div class="" style={{display:'flex',alignItems:'center',justifyContent:'center'}}>
+    <img src={`${data.ImageURL}`} style={{maxHeight:'30vh',width:'100%'}} className="img-fluid rounded-start" alt="recipes" />
     </div>
     <div className="col-md-8 mx-auto">
                       <div className="card-body text-center">
-                        <h5 className="card-title">{data.userName}</h5>
-                        <p className="card-text">{data.recipeName}</p>
-                        <p className="card-text">{data.selectedRecipe}</p>
-                        <p className="card-text">{data.ingredients}</p>
-                        <p className="card-text">{data.instructions.slice(0, 150)}....</p>
+                        <h5 className="card-title"><span className='fw-bold'>User</span> : {data.userName}</h5>
+                        <p className="card-text"><span className='fw-bold'>RecipeName</span> : {data.recipeName}</p>
+                        <p className="card-text"><span className='fw-bold'>Ingredients</span> : {data.ingredients}</p>
+                        <span className='fw-bold'>Instruction</span><br/>
+                        {data.instructions.length > 150 ? (
+  <p className="card-text" style={{textAlign:'justify'}}>{data.instructions.slice(0, 150)}....</p>
+) : (
+  <p className="card-text" style={{textAlign:'justify'}}>{data.instructions}</p>
+)}
                       </div>
                       <div id="ViewLinkVeg" style={{ textAlign: 'center', margin: '10px' }}>
                         <button type="button" id='VegViewBtn' className="btn btn-outline-primary" onClick={() => handleRemoveClick(data.recipeName)}>Remove</button>
