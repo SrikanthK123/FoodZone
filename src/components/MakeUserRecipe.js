@@ -30,41 +30,35 @@ const MakeUserRecipe = () => {
            </div>
        
        ) : (
-           <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-4">
-   {
-     recipes.map((data,index)=>(
-       <div class="col-md-12" > 
-          <div class="card mb-3" style={{maxWidth: "540px",}}>
-  <div class="row g-0">
-    <div class="" style={{display:'flex',alignItems:'center',justifyContent:'center'}}>
-    <img src={`${data.ImageURL}`} style={{maxHeight:'30vh',width:'100%'}} className="img-fluid rounded-start" alt="recipes" />
-    </div>
-    <div className="col-md-8 mx-auto">
-                      <div className="card-body text-center">
-                        <h5 className="card-title"><span className='fw-bold'>User</span> : {data.userName}</h5>
-                        <p className="card-text"><span className='fw-bold'>RecipeName</span> : {data.recipeName}</p>
-                        <p className="card-text"><span className='fw-bold'>Ingredients</span> : {data.ingredients}</p>
-                        <span className='fw-bold'>Instruction</span><br/>
-                        {data.instructions.length > 150 ? (
-  <p className="card-text" style={{textAlign:'justify'}}>{data.instructions.slice(0, 150)}....</p>
-) : (
-  <p className="card-text" style={{textAlign:'justify'}}>{data.instructions}</p>
-)}
-                      </div>
-                      <div id="ViewLinkVeg" style={{ textAlign: 'center', margin: '10px' }}>
-                        <button type="button" id='VegViewBtn' className="btn btn-outline-primary" onClick={() => handleRemoveClick(data.recipeName)}>Remove</button>
-                      </div>
-                    </div>
-  </div>
-</div>
-       </div>
-     ))
-   }
-
- </div>
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        {
+          recipes.map((data,index)=>(
+            <div class="col" >
+  
+           <div class="card">
+      <div class="card-image" style={{background:`url(${data.ImageURL})`,backgroundPosition:'center',backgroundSize:'100% 100%'}}></div>
+      <div class="category"> {data.userName} </div>
+      <div class="heading"><span>ingredients :  </span> {data.ingredients.slice(0,60)}...
+      </div>
+      <div class="heading"><span>instructions :  </span> {data.instructions.slice(0,80)}...
+      </div>
+      <div className='card-footer' style={{textAlign:'center'}}>
+      
+   
+      <div id="ViewLinkVeg " style={{padding:'10px'}} >
+        <button type="button" id='VegViewBtn' className="btn btn-outline-primary "onClick={() => handleRemoveClick(data.recipeName)}>Remove</button>
+      </div>
+    
+         </div>
+      </div> 
+            </div>
+          ))
+        }
+      </div>
    )
  }
  
+
  
 </div>
     </div>

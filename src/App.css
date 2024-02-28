@@ -1,6 +1,7 @@
 
 .HomePage{
-  background: url("./assets/BG2.gif");
+  /*background: url("./assets/BG2.gif");*/
+  background-color: #79c2d0;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -26,79 +27,7 @@
   background-color: antiquewhite;
   color: black;
 }
-#CardRecipe:hover{
-  transform: scale(1.09);
-  transition: 0.5s ease-in-out;
-  background-position: center;
-}
-#HomeCard {
-  --bg: #f7f7f8;
-  --hover-bg: #FFE5F4;
-  --hover-text: #fdffcd;
-  max-width: 23ch;
-  text-align: center;
-  background: var(--bg);
-  padding: 1.5em;
-  padding-block: 1.8em;
-  border-radius: 5px;
-  position: relative;
-  overflow: hidden;
-  transition: .3s cubic-bezier(.6,.4,0,1),transform .15s ease;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1em;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  cursor: pointer;
-}
 
-.card__body {
-  color: #464853;
-  line-height: 1.5em;
-  font-size: 1em;
-}
-
-#HomeCard > :not(span) {
-  transition: .3s cubic-bezier(.6,.4,0,1);
-}
-
-#HomeCard > strong {
-  display: block;
-  font-size: 1.4rem;
-  letter-spacing: -.035em;
-}
-
-#HomeCard span {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--hover-text);
-  border-radius: 5px;
-  font-weight: bold;
-  top: 100%;
-  transition: all .3s cubic-bezier(.6,.4,0,1);
-
-}
-
-#HomeCard:hover span {
-  top: 0;
-  font-size: 1.2em;
-}
-
-#HomeCard:hover {
-  background: var(--hover-bg);
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-}
-
-#HomeCard:hover>div,.card:hover>strong {
-  opacity: 0;
-  
-}
 .SingleVideoBox{
   width: 100%;
   height: 80vh;
@@ -478,3 +407,53 @@
     transform: scale(1.09);
   }
 }
+.card {
+  background: white;
+  padding: .4em;
+  border-radius: 6px;
+}
+
+.card-image {
+  background-color: rgb(236, 236, 236);
+  width: 100%;
+  height: 200px;
+  border-radius: 6px 6px 0 0;
+}
+
+.card-image:hover {
+  transform: scale(0.98);
+}
+
+.category {
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 600;
+  color: rgb(63, 121, 230);
+  padding: 10px 7px 0;
+}
+
+.category:hover {
+  cursor: pointer;
+}
+
+.heading {
+  font-weight: 600;
+  color: rgb(88, 87, 87);
+  padding: 7px;
+  height: 80px;
+}
+
+.heading:hover {
+  cursor: pointer;
+}
+
+
+
+.name {
+  font-weight: 600;
+}
+
+.name:hover {
+  cursor: pointer;
+}
+

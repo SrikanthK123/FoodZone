@@ -41,13 +41,13 @@ const handleSearchSubmit = (event) => {
               <Link className="nav-link" aria-current="page" to="/">Home</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/FavouriteRecipes">Favourite Recipe</Link>
+              <Link className="nav-link" to="/FavouriteRecipes">Favourite</Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/UserRecipe">User-Recipes</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/About">Make-Recipe</Link>
+              <Link className="nav-link" to="/About">Contribute</Link>
             </li>
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>

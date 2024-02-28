@@ -27,25 +27,27 @@ const Home = () => {
     </p>
     <h3 style={{color:'white',borderBottom:'2px solid white',fontFamily:'monospace'}}>Food List</h3>
     <div className='container' style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+  
+    </div>
     <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
       {
         Recipes.map((item,index)=>(
           <div class="col" >
-         <Link to={`/${item.Name}`} style={{textDecoration:'none',listStyle:'none'}}><div class="card" id='HomeCard' style={{backgroundImage:`linear-gradient(rgb(0 0 0 / 22%),rgba(0, 0, 0, 0.516)),url(${item.image})`,backgroundPosition:'center',backgroundSize:'cover',minHeight:'30vh',minWidth:'40vh'}}>
-       
-        <strong className='text-white'> {item.Name}
-        </strong>
-        <div class="card__body text-white ">
-            {item.desc}
-        </div>
-        <span>View Recipe</span>
+         <Link to={`/${item.Name}`} style={{textDecoration:'none',listStyle:'none'}}>
+
+         <div class="card">
+    <div class="card-image" style={{background:`url(${item.image})`,backgroundPosition:'center',backgroundSize:'100% 100%'}}></div>
+    <div class="category"> {item.Name} </div>
+    <div class="heading"> {item.desc}
+    </div>
     </div></Link> 
           </div>
         ))
       }
     </div>
-    </div>
-  </div>
+
+</div>
+  
 </motion.div>
 
   )

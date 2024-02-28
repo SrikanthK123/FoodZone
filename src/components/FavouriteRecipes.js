@@ -29,32 +29,32 @@ const FavouriteRecipes = () => {
                 </div>
             
             ) : (
-                <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-4">
-        {
-          FavouriteProduct.map((VegItem,index)=>(
-            <div class="col-md-12" > 
-                   <div class="card" id='VegCards' style={{background:`url(${VegItem.IngredientsImage})`,backgroundPosition:'center',backgroundRepeat:'no-repeat',backgroundSize:'100% 100%',height:'35vh',display:'flex',justifyContent:'center',alignItems:'center'}}>
-    <p class="card-title">{VegItem.Name}</p>
-    <div id="ViewLinkVeg" style={{ display: 'flex', gap: '10px' }}>
-  <Link to={`/${VegItem.Name}`}>
-    <button type="button" className='btn btn-primary' id='VegViewBtn'>View</button>
-  </Link>
-  <div id="ViewLinkVeg">
-    <button type="button" id='VegViewBtn' className="btn btn-outline-primary" onClick={() => removeItem(VegItem.Name)}>Remove</button>
-  </div>
-</div>
-
-    <div class="go-corner">
-      <div class="go-arrow">👈</div>
-    </div>
-  </div>
+              <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+              {
+                FavouriteProduct.map((item,index)=>(
+                  <div class="col " style={{background:'rgba(195, 158, 107, 0.45)',borderRadius:'10px'}} >
+        
+                 <div class="card mt-2">
+            <div class="card-image" style={{background:`url(${item.IngredientsImage})`,backgroundPosition:'center',backgroundSize:'100% 100%'}}></div>
+            
             </div>
-          ))
-        }
-     
-      </div>
+            <div class="category my-2 text-white" > {item.Name}
+            <div id="ViewLinkVeg" style={{ display: 'flex', gap: '10px',padding:'10px',justifyContent:'center' }}>
+          <Link to={`/${item.Name}`}>
+            <button type="button" className='btn btn-primary' id='VegViewBtn'>View</button>
+          </Link>
+          <div id="ViewLinkVeg">
+            <button type="button" id='VegViewBtn' className="btn btn-outline-primary" onClick={() => removeItem(item.Name)}>Remove</button>
+          </div>
+        </div> </div>
+                  </div>
+                ))
+              }
+            </div>
+      
         )
       }
+    
       
       
 </div>
