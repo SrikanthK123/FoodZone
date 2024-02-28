@@ -18,8 +18,10 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
   border-radius: 15px;
-  animation: ChangeImage 10s infinite  ease-in-out;
+  animation: ChangeImage 10s infinite ;
   
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
 }
 
 @keyframes ChangeImage {
