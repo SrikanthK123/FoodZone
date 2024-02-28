@@ -26,7 +26,7 @@ const AllRecipeProcess = (props) => {
   
 
   return (
-    <motion.div className='HomePage' initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0, transition: { duration: 0.1 } }} >
+    <motion.div className='HomePage' initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0, transition: { duration: 0.1 } }} style={{paddingBottom:'10px'}} >
       <div className='SingleVideoBox' style={{ width: '100%', height: '80vh' }}>
         
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '90%' }}>
