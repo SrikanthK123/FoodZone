@@ -74,6 +74,7 @@ const About = () => {
   
       setSuccessalert('👍 Successfully added');
     } 
+    window.scrollTo(0, 0);
   };        
 
   return (

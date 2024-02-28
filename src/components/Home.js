@@ -15,7 +15,7 @@ const Home = () => {
     <motion.div className='HomePage' initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0,transition:{duration:0.10}}} >
 
   <div className='container py-3' style={{marginTop:'50px'}} >
-    <div className='ImageBox ' style={{display:'flex',justifyContent:'flex-start',alignItems:'center'}}>
+    <div className='ImageBox' style={{display:'flex',justifyContent:'flex-start',alignItems:'center'}}>
         <div className='InsideContent'>
         <h1 className='mx-3 text-white'>Where Every Dish is a Taste of Pure Joy!</h1>
         <p className='text-white px-3'>A culinary adventure where every bite is a masterpiece. Indulge in flavors that redefine enjoyment with our top-notch recipes!</p>

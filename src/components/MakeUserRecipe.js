@@ -14,6 +14,8 @@ const MakeUserRecipe = () => {
   const handleRemoveClick = (recipeName) => {
     dispatch(removeRecipe(recipeName));
   };
+  const maxIngredientsLength = 60;
+  const maxInstructionsLength = 80;
   ;
 
   
@@ -36,11 +38,20 @@ const MakeUserRecipe = () => {
             <div class="col" >
   
            <div class="card">
-      <div class="card-image" style={{background:`url(${data.ImageURL})`,backgroundPosition:'center',backgroundSize:'100% 100%'}}></div>
+      <div class="card-image" style={{background:`url(${data.ImageURL})`,backgroundPosition:'center',backgroundSize:'100% 100%'}} ></div>
       <div class="category"> {data.userName} </div>
-      <div class="heading"><span>ingredients :  </span> {data.ingredients.slice(0,60)}...
+      <div className="heading">
+        <span>ingredients : </span>
+        {data.ingredients.length <= maxIngredientsLength
+          ? data.ingredients
+          : `${data.ingredients.slice(0, maxIngredientsLength)}...`}
       </div>
-      <div class="heading"><span>instructions :  </span> {data.instructions.slice(0,80)}...
+
+      <div className="heading">
+        <span>instructions : </span>
+        {data.instructions.length <= maxInstructionsLength
+          ? data.instructions
+          : `${data.instructions.slice(0, maxInstructionsLength)}...`}
       </div>
       <div className='card-footer' style={{textAlign:'center'}}>
       
