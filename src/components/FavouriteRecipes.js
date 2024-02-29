@@ -25,7 +25,7 @@ const FavouriteRecipes = () => {
       {
         FavouriteProduct.length === 0 ? (
             <div style={{width:'100%',height:'75vh',display:'flex',justifyContent:'center',alignItems:'center'}}>
-                <h3 style={{ textAlign: 'center', marginTop: '20px' ,color:'white'}}>No favorite items 😞.</h3>
+                <h3 style={{ textAlign: 'center', marginTop: '20px' ,color:'black'}}>No favorite items 😞.</h3>
                 </div>
             
             ) : (
