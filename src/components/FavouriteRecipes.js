@@ -32,7 +32,7 @@ const FavouriteRecipes = () => {
               <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
               {
                 FavouriteProduct.map((item,index)=>(
-                  <div class="col " style={{background:'rgba(195, 158, 107, 0.45)',borderRadius:'10px'}} >
+                  <div class="col " style={{background:'grey',borderRadius:'10px'}} >
         
                  <div class="card mt-2">
             <div class="card-image" style={{background:`url(${item.IngredientsImage})`,backgroundPosition:'center',backgroundSize:'100% 100%'}}></div>

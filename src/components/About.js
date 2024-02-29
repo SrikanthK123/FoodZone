@@ -104,7 +104,7 @@ const About = () => {
             </div>
           </div>
         )}
-          <h1 className="h3 mb-3 fw-normal text-white " style={{ paddingTop: '15px' }}>
+          <h1 className="h3 mb-3 fw-700 text-black " style={{ paddingTop: '15px' }}>
             <img src="https://cdn-icons-png.flaticon.com/512/6347/6347316.png" alt="recipe" style={{ width: '50px', height: '50px', marginRight: '10px' }} />
             Make Your Recipe
           </h1>

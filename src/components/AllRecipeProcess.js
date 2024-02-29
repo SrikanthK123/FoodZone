@@ -51,14 +51,14 @@ const AllRecipeProcess = (props) => {
       </div>
 
       <div className='container' >
-        <h2 style={{ borderBottom: '2px solid white', padding: '10px', fontFamily: 'monospace', color: 'white' }}><span style={{ color: '#ffb5b5' }}>{props.Name}</span> Process</h2>
+        <h2 style={{ borderBottom: '2px solid white', padding: '10px', fontFamily: 'monospace', color: 'white',marginTop:'10px' }}><span style={{ color: '#c3195d' }}>{props.Name}</span> <span style={{color:'black'}}>Process</span></h2>
         <div>
           <div class="bd-example-snippet bd-code-snippet"><div class="bd-example m-0 border-0">
             <nav style={{ display: 'flex', justifyContent: 'center' }}>
               <div class="nav nav-tabs mb-3 gap-3 my-4" id="nav-tab" role="tablist" >
-                <button class="nav-link active" id="nav-Instruction-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true" style={{ backgroundColor: '#a2a8d3' }}>Instruction</button>
-                <button class="nav-link" id="nav-Ingredients-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false" tabindex="-1" style={{ backgroundColor: '#a2a8d3' }}>Ingredients</button>
-                <button class="nav-link" id="nav-Tips-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false" tabindex="-1" style={{ backgroundColor: '#a2a8d3' }}>Tips </button>
+                <button class="nav-link active" id="nav-Instruction-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true" style={{ backgroundColor: '#f76b8a' }}>Instruction</button>
+                <button class="nav-link" id="nav-Ingredients-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false" tabindex="-1" style={{ backgroundColor: '#f76b8a' }}>Ingredients</button>
+                <button class="nav-link" id="nav-Tips-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false" tabindex="-1" style={{ backgroundColor: '#f76b8a' }}>Tips </button>
               </div>
             </nav>
             <div class="tab-content" id="nav-tabContent" style={{ minHeight: '35vh' }}>
@@ -66,7 +66,7 @@ const AllRecipeProcess = (props) => {
                 <div className='ImageInstruction my-4' style={{ display: 'flex', justifyContent: 'center' }}>
                   <img src={props.InstructionImage} style={{ width: '300px', height: '300px', marginTop: '40px', border: '2px solid white', borderRadius: '15px' }} alt="gif" />
                 </div>
-                <ol>
+                <ol style={{color:'black'}}>
                   {props.InstructionPara1.split('.').map((sentence, index) => (
                     <li key={index}>{sentence.trim()}</li>
                   ))}
@@ -76,7 +76,7 @@ const AllRecipeProcess = (props) => {
                 <div className='ImageInstruction my-4' style={{ display: 'flex', justifyContent: 'center' }}>
                   <img src={props.IngredientsImage} style={{ width: '300px', height: '300px', marginTop: '40px', border: '2px solid white', borderRadius: '15px' }} alt="gif" />
                 </div>
-                <ul>
+                <ul style={{color:'black'}}>
                   {props.IngredientsPara.split('.').map((sentence, index) => (
                     <li key={index}>{sentence.trim()}</li>
                   ))}
@@ -86,8 +86,8 @@ const AllRecipeProcess = (props) => {
                 <div className='ImageInstruction my-4' style={{ display: 'flex', justifyContent: 'center' }}>
                   <img src={props.TipsImage} style={{ width: '300px', height: '300px', marginTop: '40px', border: '2px solid white', borderRadius: '15px' }} alt="gif" />
                 </div>
-                <p>Here are some tips and tricks to enhance your {props.Name}:</p>
-                <ul>
+                <p  style={{color:'black'}}>Here are some tips and tricks to enhance your {props.Name}:</p>
+                <ul style={{color:'black'}}>
                   {props.TipsPara.split('.').map((sentence, index) => (
                     <li key={index}>{sentence.trim()}</li>
                   ))}
