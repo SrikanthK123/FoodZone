@@ -9,60 +9,56 @@
   height: auto;
   
 }
-.ImageBox{
+.ImageBox {
   width: 100%;
   height: 70vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.516),rgba(0, 0, 0, 0.516)),url("https://images.unsplash.com/photo-1606787366850-de6330128bfc?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-  background-position: center;
+  background: linear-gradient(rgba(69, 65, 65, 0.516), rgba(0, 0, 0, 0.516)),
+    url("https://img.freepik.com/free-photo/3d-render-fast-food-burger-french-fries-coffee_107791-17005.jpg?t=st=1709199681~exp=1709203281~hmac=6bedeb91f131f12123797662e1698ddfbc204cfcedf7a101a2e2befea7dd676a&w=1060");
+  background-position: left 80% center; /* Set background image to the left 50% */
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   border-radius: 15px;
-  animation: ChangeImage 10s infinite ;
-  
-  animation-timing-function: ease-in-out;
-  -webkit-animation-timing-function: ease-in-out;
+  transition: all 0.5s ease-out;
+  animation: ChangeImage 10s linear infinite;
 }
 
-@keyframes ChangeImage {
-  25%{
-   background-image: linear-gradient(rgba(0, 0, 0, 0.516),rgba(0, 0, 0, 0.516)),url("https://images.unsplash.com/photo-1606787366850-de6330128bfc?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: 100% 100%;
-   
-   
-   
-  
-  }
- 
- 
-  50%{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.516),rgba(0, 0, 0, 0.516)),url("https://images.unsplash.com/photo-1493770348161-369560ae357d?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    
-    
+
+/*@keyframes ChangeImage {
+  25% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.516), rgba(0, 0, 0, 0.516)),
+      url("https://images.unsplash.com/photo-1606787366850-de6330128bfc?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   }
 
-  75%{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.516),rgba(0, 0, 0, 0.516)),url("https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-   
-    
+  50% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.516), rgba(0, 0, 0, 0.516)),
+      url("https://images.unsplash.com/photo-1493770348161-369560ae357d?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   }
 
-  100%{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.516),rgba(0, 0, 0, 0.516)),url("https://images.unsplash.com/photo-1485963631004-f2f00b1d6606?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    
-    
+  75% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.516), rgba(0, 0, 0, 0.516)),
+      url("https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   }
+
+  100% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.516), rgba(0, 0, 0, 0.516)),
+      url("https://images.unsplash.com/photo-1485963631004-f2f00b1d6606?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  }
+}*/
+
+#NavLogo{
+  background-color:rgba(243, 240, 240, 0.903) ;
+  color: #132743;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  transition: all 0.5s ease-out;
+}
+#NavLogo:hover{
+  background-color: #132743;
+  color: white;
 }
 .nav-link{
   color: white;

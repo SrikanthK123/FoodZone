@@ -31,7 +31,7 @@ const handleSearchSubmit = (event) => {
   return (
     <nav className="navbar navbar-expand-md navbar-dark fixed-top" style={{ backgroundColor: '#132743' }}>
       <div className="container-fluid">
-        <Link className="navbar-brand fw-bold" to="/" style={{ color: '#ffb5b5' }}>Food Zone</Link>
+        <Link className="navbar-brand fw-bold" to="/" id="NavLogo" >Food Zone</Link>
         <button className="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>

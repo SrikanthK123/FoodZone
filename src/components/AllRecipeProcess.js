@@ -4,23 +4,18 @@ import Instruction from './Instruction';
 import { animate, motion } from "framer-motion"
 import { useDispatch } from 'react-redux';
 import { add } from '../store/cartSlice';
-import AddedBellsound from "../assets/Bell_Success.wav"
 
 const AllRecipeProcess = (props) => {
   const [alertMessage, setAlertMessage] = useState('');
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  const playAudio = () => {
-    const audio = new Audio(AddedBellsound);
-    audio.play();
-  };
+ 
 
   const dispatch = useDispatch();
 
   const addToFavourite = (props) => {
     dispatch(add(props));
-    playAudio(); 
     
   };
   
@@ -56,9 +51,9 @@ const AllRecipeProcess = (props) => {
           <div class="bd-example-snippet bd-code-snippet"><div class="bd-example m-0 border-0">
             <nav style={{ display: 'flex', justifyContent: 'center' }}>
               <div class="nav nav-tabs mb-3 gap-3 my-4" id="nav-tab" role="tablist" >
-                <button class="nav-link active" id="nav-Instruction-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true" style={{ backgroundColor: '#f76b8a' }}>Instruction</button>
-                <button class="nav-link" id="nav-Ingredients-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false" tabindex="-1" style={{ backgroundColor: '#f76b8a' }}>Ingredients</button>
-                <button class="nav-link" id="nav-Tips-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false" tabindex="-1" style={{ backgroundColor: '#f76b8a' }}>Tips </button>
+                <button class="nav-link active" id="nav-Instruction-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true" style={{ backgroundColor: '#c86b85' }}>Instruction</button>
+                <button class="nav-link" id="nav-Ingredients-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false" tabindex="-1" style={{ backgroundColor: '#c86b85' }}>Ingredients</button>
+                <button class="nav-link" id="nav-Tips-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false" tabindex="-1" style={{ backgroundColor: '#c86b85' }}>Tips </button>
               </div>
             </nav>
             <div class="tab-content" id="nav-tabContent" style={{ minHeight: '35vh' }}>

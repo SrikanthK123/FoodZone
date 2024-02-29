@@ -10,7 +10,7 @@ const SpecialRecipe = () => {
     <div className='HomePage'>
     <div class="container"  style={{marginTop:'50px'}}>
      <div className='TextVeg' style={{display:'flex',justifyContent:'center'}}>
-      <h2 className='p-3 text-white mt-5' style={{backgroundColor:'black',borderRadius:'10px',boxShadow:'rgba(0, 0, 0, 0.24) 0px 3px 8px'}}>Special-Recipe</h2>
+      <h2 className='p-3 text-white mt-5' style={{backgroundColor:'#ff8585',color:'#ffebeb',borderRadius:'10px',boxShadow:'rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px',}}>Special-Recipe</h2>
       </div>
       <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
       {

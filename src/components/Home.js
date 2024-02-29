@@ -4,6 +4,7 @@ import {
   Link
 } from "react-router-dom";
 import { animate, motion} from "framer-motion"
+import MainImg from "../assets/Food.gif"
 
 const Home = () => {
   useEffect(() => {
@@ -20,6 +21,7 @@ const Home = () => {
         <h1 className='mx-3 text-white' >Where Every Dish is a Taste of Pure Joy!</h1>
         <p className='text-white px-3'>A culinary adventure where every bite is a masterpiece. Indulge in flavors that redefine enjoyment with our top-notch recipes!</p>
         </div>
+       {/**<img src="https://cdn.pixabay.com/photo/2020/12/31/12/28/cook-5876388_960_720.png" style={{width:'500px'}}/> */} 
         
     </div>
     <p className=' py-2' style={{textAlign:'justify',color:'black'}} >
