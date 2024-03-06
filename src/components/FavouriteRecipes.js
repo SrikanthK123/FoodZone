@@ -29,15 +29,13 @@ const FavouriteRecipes = () => {
                 </div>
             
             ) : (
-              <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+              <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5 px-2">
               {
                 FavouriteProduct.map((item,index)=>(
-                  <div class="col " style={{background:'grey',borderRadius:'10px'}} >
+                  <div class="col" key={item.id} >
         
-                 <div class="card mt-2">
+                 <div class="card mt-2" style={{background:'grey',borderRadius:'10px'}}>
             <div class="card-image" style={{background:`url(${item.IngredientsImage})`,backgroundPosition:'center',backgroundSize:'100% 100%'}}></div>
-            
-            </div>
             <div class="category my-2 text-white" > {item.Name}
             <div id="ViewLinkVeg" style={{ display: 'flex', gap: '10px',padding:'10px',justifyContent:'center' }}>
           <Link to={`/${item.Name}`}>
@@ -47,6 +45,8 @@ const FavouriteRecipes = () => {
             <button type="button" id='VegViewBtn' className="btn btn-outline-primary" onClick={() => removeItem(item.Name)}>Remove</button>
           </div>
         </div> </div>
+            </div>
+           
                   </div>
                 ))
               }
